@@ -11,6 +11,7 @@ import static io.restassured.RestAssured.given;
  * @create: 2022-07-05 20:49
  **/
 public class TestC {
+
     @Test
     public void test(){
         given().get("https://weather.cma.cn/api/now/54511")
