@@ -21,15 +21,9 @@ public class TestA {
             .body("data.location.name",equalTo("上海"));
     }
 
-    @Test
-    public void test2(){
-        given().get("https://weather.cma.cn/api/now/54511")
-            .then()
-            .body("data.location.name",equalTo("深圳"));
-    }
 
     @Test
-    public void test3(){
+    public void test2(){
         given().get("https://weather.cma.cn/api/now/54511")
             .then()
             .body("data.location.name",equalTo("北京"));
